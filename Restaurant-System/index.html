@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Ordering System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Restaurant</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h2 class="text-center mb-4">Customer Order Form</h2>
+        <form id="order-form" class="bg-light p-4 rounded shadow">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="mb-3">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob" required>
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Order Type</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="shawarma" name="orderType" value="Shawarma">
+              <label class="form-check-label" for="shawarma">Shawarma</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="zinger" name="orderType" value="Zinger">
+              <label class="form-check-label" for="zinger">Zinger</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="burger" name="orderType" value="Burger">
+              <label class="form-check-label" for="burger">Burger</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Order Option</label>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="combo" name="orderOption" value="Combo" required>
+              <label class="form-check-label" for="combo">Combo</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="sandwich" name="orderOption" value="Sandwich" required>
+              <label class="form-check-label" for="sandwich">Sandwich</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-5">
+     
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Restaurant Ordering System. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

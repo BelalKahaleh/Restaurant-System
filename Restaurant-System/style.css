@@ -1,0 +1,22 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header .navbar-brand {
+    font-weight: bold;
+  }
+  
+  form {
+    background-color: #f8f9fa;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .card img {
+    max-height: 200px;
+    object-fit: cover;
+    
+  }
+  
